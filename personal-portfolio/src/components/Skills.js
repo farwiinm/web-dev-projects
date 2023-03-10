@@ -1,6 +1,8 @@
-import meter1 from "../assets/img/meter1.svg";
-import meter2 from "../assets/img/meter2.svg";
-import meter3 from "../assets/img/meter3.svg";
+import exoplanets from '../assets/img/exoplanets.png';
+import transit from '../assets/img/Transit.png';
+import habitable from '../assets/img/Habitable Zone.png';
+import telescope from '../assets/img/telescope.png';
+import curve from '../assets/img/light curve.png';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import arrow1 from "../assets/img/arrow1.svg";
@@ -34,24 +36,28 @@ export const Skills = () => {
             <div className="row">
                 <div className="col-12">
                     <div className="skill-bx wow zoomIn">
-                        <h2>Skills</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br></br> Lorem Ipsum has been the industry's standard dummy text.</p>
+                        <h2>Before Launch</h2>
+                        <p>As excited you might be to learn about the Kepler mission, there are some key terms that you should know so you do not surprise yourself. Click on the terms to know more!</p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>Web Development</h5>
+                                <img src={exoplanets} alt="Image" />
+                                <h5>Exoplanets</h5>
                             </div>
                             <div className="item">
-                                <img src={meter2} alt="Image" />
-                                <h5>Brand Identity</h5>
+                                <img src={transit} alt="Image" />
+                                <h5>Transit Method</h5>
                             </div>
                             <div className="item">
-                                <img src={meter3} alt="Image" />
-                                <h5>Logo Design</h5>
+                                <img src={habitable} alt="Image" />
+                                <h5>Habitable Zone</h5>
                             </div>
                             <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>Web Development</h5>
+                                <img src={telescope} alt="Image" />
+                                <h5>Space Telescope</h5>
+                            </div>
+                            <div className="item">
+                                <img src={curve} alt="Image" />
+                                <h5>Light Curve</h5>
                             </div>
                         </Carousel>
                     </div>
